@@ -103,4 +103,39 @@ main {
   text-align: left;
   min-width: 410px;
 }
+
+.hero-image {
+  background-color: #aa5cdb;
+  max-height: 446px;
+}
+
+.hero-image img {
+  mix-blend-mode: multiply;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.attribution {
+  color: white;
+  background-color: #090b1a;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.attribution span {
+  color: #ff8fc1;
+}
+
+.attribution a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.attribution img {
+  vertical-align: sub;
+}
 /*# sourceMappingURL=style.css.map */

@@ -111,5 +111,30 @@ main{
         min-width: 410px;
     
     }
-    
+   .hero-image{
+       background-color: $accent;
+       max-height: 446px;
+       img{
+           mix-blend-mode: multiply;
+           min-height: fit-content;
+       }
+   }
+
+   .attribution{
+       color: white;
+       background-color: $main-background;
+       text-align: center;
+       align-items: center;
+       padding-bottom: 20px;
+       
+       span{
+           color:#ff8fc1;
+       }
+       a {
+        text-decoration-line: none;
+       }
+       img{
+           vertical-align: sub;
+       }
+   }
 
