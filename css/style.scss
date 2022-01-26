@@ -1,0 +1,115 @@
+// Querys
+
+
+
+
+// ## Colors
+
+// ### Primary
+
+$main-background: hsl(233, 47%, 7%);
+$card-background: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+
+// ### Neutral
+
+$main-heading-stats: hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-headings: hsla(0, 0%, 100%, 0.6);
+
+
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-background;
+    flex-direction: row;
+}
+.card{
+    background-color: $card-background;
+    // max-height: 20%;
+    display: flex;
+    border-radius: 10px;
+    // flex-direction: column;
+    
+    margin: 10rem;
+    
+    &-text{
+        color: $main-heading-stats;
+        max-width: 350px;
+        
+
+        h1{
+            font-weight: 700;
+        }
+      
+
+        h2{
+            color: $stat-headings;
+            font-weight: 400;
+            font-size: smaller;
+            line-height: 1.5rem;
+        
+        }
+        span{
+            color: $accent;
+        }
+    }
+       
+
+    &-footer{
+        color: $main-heading-stats;
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+        text-align: left;
+        
+
+        &-element{
+
+            align-self: flex-end;
+
+            h3{
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-bottom: 5px;
+                margin-top: 50px;
+            }
+        }
+
+
+        h4{
+            color: $stat-headings;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 10px;
+            margin: auto;
+            font-size: smaller;
+        }
+        }
+        
+    }
+    .card-info{
+        // padding: 3rem;
+        margin: 4rem;
+        justify-content: center;
+        text-align: left;
+        min-width: 410px;
+    
+    }
+    
+
