@@ -3,6 +3,7 @@ html {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #090b1a;
 }
 
 body {
@@ -33,7 +34,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
-  margin: 10rem;
+  margin: 8rem;
 }
 
 .card-text {
@@ -107,13 +108,22 @@ main {
 .hero-image {
   background-color: #aa5cdb;
   max-height: 446px;
+  position: relative;
 }
 
 .hero-image img {
   mix-blend-mode: multiply;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+  height: 100%;
+}
+
+.hero-image-overlay {
+  background-color: #aa5cdb;
+  height: 446px;
+  width: 540px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
 }
 
 .attribution {
