@@ -1,7 +1,3 @@
-// Querys
-
-
-
 
 // ## Colors
 
@@ -116,9 +112,16 @@ main{
        background-color: $accent;
        max-height: 446px;
        position: relative;
+
+       .mobilephone{
+        display: none;
+    }
+      
        img{
            mix-blend-mode: multiply;
            height: 100%;
+
+         
        }
        &-overlay{
            background-color: $accent;
@@ -149,3 +152,53 @@ main{
        }
    }
 
+   // Querys
+@media screen and (max-width: 375px){
+
+    body{
+        font-size: 100%;
+    }    
+    
+
+    .card{
+        flex-direction: column-reverse;
+        // max-width: 88%;
+        // min-width: fit-content;
+        margin: 0;
+        border-radius: 15px;
+
+        &-info{
+            min-width: 10px;
+            margin: 2rem;
+            text-align: center;
+        }
+
+         &-footer{
+                display: contents;
+                text-align: center;
+
+
+            }
+        
+     .hero-image{
+         &-overlay{
+             max-width: fit-content;
+         }
+     }
+
+     .mobilephone{
+         display: block;
+         max-width: 375px;
+     }
+     .desktop{
+         display: none;
+     }
+    }
+
+    .attribution{
+        margin-top: 30px;
+    }
+  
+
+};
+   
